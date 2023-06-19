@@ -1,7 +1,5 @@
 const express = require('express');
-const router = express.Router();
-
-
+const middleware=
 
 exports.getBootCamps = (req, res, next) => {
     res.status(200).json({
@@ -10,9 +8,11 @@ exports.getBootCamps = (req, res, next) => {
     });
 };
 exports.getBootCamp = (req, res, next) => {
+    console.log(req.text);
     res.status(200).json({
         success: true,
         data: `show bootcamps details with ${req.params.id}`,
+        data_middleware:req.text,
     });
 };
 
