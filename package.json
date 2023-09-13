@@ -4,7 +4,7 @@
   "description": "API building and learning from scratch",
   "main": "index.js",
   "scripts": {
-    "start": " SET NODE_ENV=production && node index",
+    "start": " set NODE_ENV=production && node index",
     "dev": "nodemon index"
   },
   "author": "Abhishek Parmar",
